@@ -10,7 +10,7 @@ import { map } from 'rxjs/operators';
 export class AppComponent {
   constructor(private http: HttpClient) {
     this.http
-      .get('/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf', {
+      .get('/lineup/dslr/df/img/sample/img_01.jpg', {
         responseType: 'blob',
       })
       .pipe(
@@ -19,7 +19,7 @@ export class AppComponent {
         })
       )
       .subscribe((data: any) => {
-        var blob = new Blob([data], { type: 'application/pdf' });
+        var blob = new Blob([data]);
         var fileURL = URL.createObjectURL(blob);
         window.open(fileURL);
         console.log(data);

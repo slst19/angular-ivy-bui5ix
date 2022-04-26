@@ -1,9 +1,9 @@
 {
-  "/WAI": {
-    "target": "https://www.w3.org",
+  "/lineup": {
+    "target": "https://imaging.nikon.com",
     "changeOrigin": true,
 
     "logLevel": "debug",
-    "pathRewrite": { "^/WAI": "" }
+    "pathRewrite": { "^/lineup": "" }
   }
 }
