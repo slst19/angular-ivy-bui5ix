@@ -1,0 +1,9 @@
+{
+  "/WAI": {
+    "target": "https://www.w3.org",
+    "changeOrigin": true,
+
+    "logLevel": "debug",
+    "pathRewrite": { "^/WAI": "" }
+  }
+}
